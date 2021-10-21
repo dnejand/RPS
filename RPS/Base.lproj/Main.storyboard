@@ -1,24 +1,118 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RPS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iwp-d1-KNb">
+                                <rect key="frame" x="42" y="390" width="99" height="116"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="👊">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="70"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRV-NP-amF">
+                                <rect key="frame" x="161" y="390" width="99" height="116"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="✋">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="70"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="paperClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MJw-l8-ZtB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gO7-XD-gGY">
+                                <rect key="frame" x="277" y="390" width="99" height="116"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="✌️">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="70"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="scissorsClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vJe-FO-3fL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sLJ-aB-hYN">
+                                <rect key="frame" x="42" y="390" width="99" height="116"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="👊">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="70"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="rockClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pOn-S7-0eU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m9U-CM-bv5">
+                                <rect key="frame" x="142" y="572" width="137" height="44"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Play Again">
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="playAgainClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O2H-so-nua"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x47-EX-CVS">
+                                <rect key="frame" x="0.0" y="284" width="414" height="30"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🤖" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F4u-od-HcD">
+                                <rect key="frame" x="169.5" y="146" width="75" height="84"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="sLJ-aB-hYN" firstAttribute="baseline" secondItem="Iwp-d1-KNb" secondAttribute="baseline" id="6tp-1S-SP5"/>
+                            <constraint firstItem="x47-EX-CVS" firstAttribute="top" secondItem="F4u-od-HcD" secondAttribute="bottom" constant="54" id="9Be-tp-ltm"/>
+                            <constraint firstItem="sLJ-aB-hYN" firstAttribute="leading" secondItem="Iwp-d1-KNb" secondAttribute="leading" id="Dxg-7a-gDg"/>
+                            <constraint firstItem="Iwp-d1-KNb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="42" id="I6Z-Hb-bat"/>
+                            <constraint firstItem="F4u-od-HcD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NzN-X2-4qg"/>
+                            <constraint firstItem="gO7-XD-gGY" firstAttribute="leading" secondItem="gRV-NP-amF" secondAttribute="trailing" constant="17" id="SJb-An-WVS"/>
+                            <constraint firstItem="F4u-od-HcD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="102" id="UuI-cU-fVu"/>
+                            <constraint firstItem="Iwp-d1-KNb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Vns-4J-IYr"/>
+                            <constraint firstItem="F4u-od-HcD" firstAttribute="centerX" secondItem="x47-EX-CVS" secondAttribute="centerX" id="WCS-ct-7j2"/>
+                            <constraint firstItem="x47-EX-CVS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="X1m-Qt-54T"/>
+                            <constraint firstItem="gRV-NP-amF" firstAttribute="baseline" secondItem="gO7-XD-gGY" secondAttribute="baseline" id="YN0-44-XyH"/>
+                            <constraint firstItem="Iwp-d1-KNb" firstAttribute="baseline" secondItem="gRV-NP-amF" secondAttribute="baseline" id="Zog-r0-u36"/>
+                            <constraint firstItem="m9U-CM-bv5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="142" id="aHE-KZ-wJe"/>
+                            <constraint firstItem="gRV-NP-amF" firstAttribute="centerX" secondItem="m9U-CM-bv5" secondAttribute="centerX" id="aT8-we-J60"/>
+                            <constraint firstItem="m9U-CM-bv5" firstAttribute="top" secondItem="gRV-NP-amF" secondAttribute="bottom" constant="66" id="fKn-l6-TCP"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="appSign" destination="F4u-od-HcD" id="6Kd-1w-I4e"/>
+                        <outlet property="paperButton" destination="gRV-NP-amF" id="cAm-di-xxk"/>
+                        <outlet property="playAgainButton" destination="m9U-CM-bv5" id="wD1-mT-WK2"/>
+                        <outlet property="rockButton" destination="sLJ-aB-hYN" id="dAP-fa-LGK"/>
+                        <outlet property="scissorsButton" destination="gO7-XD-gGY" id="gL9-v6-OQv"/>
+                        <outlet property="statusLabel" destination="x47-EX-CVS" id="RuF-hJ-2Zb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="293" y="63"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
