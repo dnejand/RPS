@@ -90,7 +90,7 @@ class ViewController: UIViewController {
         let computerSign = randomSign()
               
         appSign.text = computerSign.emoji
-        
+
         let gameState = sign.gameState(computerSign: computerSign)
         
         updateUI(forState: gameState)

@@ -16,13 +16,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iwp-d1-KNb">
-                                <rect key="frame" x="42" y="390" width="99" height="116"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="👊">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="70"/>
-                                </buttonConfiguration>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRV-NP-amF">
                                 <rect key="frame" x="161" y="390" width="99" height="116"/>
                                 <state key="normal" title="Button"/>
@@ -53,16 +46,6 @@
                                     <action selector="rockClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pOn-S7-0eU"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m9U-CM-bv5">
-                                <rect key="frame" x="142" y="572" width="137" height="44"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Play Again">
-                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="playAgainClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O2H-so-nua"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x47-EX-CVS">
                                 <rect key="frame" x="0.0" y="284" width="414" height="30"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
@@ -75,25 +58,36 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m9U-CM-bv5">
+                                <rect key="frame" x="108" y="572" width="199" height="44"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Play Again">
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="playAgainClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O2H-so-nua"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="sLJ-aB-hYN" firstAttribute="baseline" secondItem="Iwp-d1-KNb" secondAttribute="baseline" id="6tp-1S-SP5"/>
-                            <constraint firstItem="x47-EX-CVS" firstAttribute="top" secondItem="F4u-od-HcD" secondAttribute="bottom" constant="54" id="9Be-tp-ltm"/>
-                            <constraint firstItem="sLJ-aB-hYN" firstAttribute="leading" secondItem="Iwp-d1-KNb" secondAttribute="leading" id="Dxg-7a-gDg"/>
-                            <constraint firstItem="Iwp-d1-KNb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="42" id="I6Z-Hb-bat"/>
-                            <constraint firstItem="F4u-od-HcD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NzN-X2-4qg"/>
-                            <constraint firstItem="gO7-XD-gGY" firstAttribute="leading" secondItem="gRV-NP-amF" secondAttribute="trailing" constant="17" id="SJb-An-WVS"/>
-                            <constraint firstItem="F4u-od-HcD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="102" id="UuI-cU-fVu"/>
-                            <constraint firstItem="Iwp-d1-KNb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Vns-4J-IYr"/>
-                            <constraint firstItem="F4u-od-HcD" firstAttribute="centerX" secondItem="x47-EX-CVS" secondAttribute="centerX" id="WCS-ct-7j2"/>
-                            <constraint firstItem="x47-EX-CVS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="X1m-Qt-54T"/>
-                            <constraint firstItem="gRV-NP-amF" firstAttribute="baseline" secondItem="gO7-XD-gGY" secondAttribute="baseline" id="YN0-44-XyH"/>
-                            <constraint firstItem="Iwp-d1-KNb" firstAttribute="baseline" secondItem="gRV-NP-amF" secondAttribute="baseline" id="Zog-r0-u36"/>
-                            <constraint firstItem="m9U-CM-bv5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="142" id="aHE-KZ-wJe"/>
-                            <constraint firstItem="gRV-NP-amF" firstAttribute="centerX" secondItem="m9U-CM-bv5" secondAttribute="centerX" id="aT8-we-J60"/>
-                            <constraint firstItem="m9U-CM-bv5" firstAttribute="top" secondItem="gRV-NP-amF" secondAttribute="bottom" constant="66" id="fKn-l6-TCP"/>
+                            <constraint firstItem="x47-EX-CVS" firstAttribute="centerX" secondItem="m9U-CM-bv5" secondAttribute="centerX" id="6Z7-HW-8ya"/>
+                            <constraint firstItem="F4u-od-HcD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7UY-2g-K25"/>
+                            <constraint firstItem="m9U-CM-bv5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="108" id="AGg-MB-MbD"/>
+                            <constraint firstItem="gO7-XD-gGY" firstAttribute="leading" secondItem="gRV-NP-amF" secondAttribute="trailing" constant="17" id="AQj-RH-ghY"/>
+                            <constraint firstItem="x47-EX-CVS" firstAttribute="top" secondItem="F4u-od-HcD" secondAttribute="bottom" constant="54" id="BGR-Lr-QVf"/>
+                            <constraint firstItem="x47-EX-CVS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ByC-Mo-ijx"/>
+                            <constraint firstItem="F4u-od-HcD" firstAttribute="centerX" secondItem="x47-EX-CVS" secondAttribute="centerX" id="F2u-fk-ZCF"/>
+                            <constraint firstItem="gRV-NP-amF" firstAttribute="top" secondItem="x47-EX-CVS" secondAttribute="bottom" constant="76" id="GvR-eW-nnW"/>
+                            <constraint firstItem="sLJ-aB-hYN" firstAttribute="baseline" secondItem="gRV-NP-amF" secondAttribute="baseline" id="Ktw-Hx-mKU"/>
+                            <constraint firstItem="gRV-NP-amF" firstAttribute="leading" secondItem="sLJ-aB-hYN" secondAttribute="trailing" constant="20" id="P9j-Fq-R4n"/>
+                            <constraint firstItem="sLJ-aB-hYN" firstAttribute="top" secondItem="x47-EX-CVS" secondAttribute="bottom" constant="76" id="aSy-B0-6vH"/>
+                            <constraint firstItem="sLJ-aB-hYN" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fCe-Md-O3Z"/>
+                            <constraint firstItem="m9U-CM-bv5" firstAttribute="top" secondItem="sLJ-aB-hYN" secondAttribute="bottom" constant="66" id="gOh-JR-hXd"/>
+                            <constraint firstItem="sLJ-aB-hYN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="42" id="kSl-iB-rHE"/>
+                            <constraint firstItem="gO7-XD-gGY" firstAttribute="top" secondItem="x47-EX-CVS" secondAttribute="bottom" constant="76" id="pKO-Er-ZyZ"/>
+                            <constraint firstItem="gRV-NP-amF" firstAttribute="baseline" secondItem="gO7-XD-gGY" secondAttribute="baseline" id="ult-Bj-Exa"/>
                         </constraints>
                     </view>
                     <connections>
@@ -107,7 +101,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="293" y="63"/>
+            <point key="canvasLocation" x="292.75362318840581" y="62.946428571428569"/>
         </scene>
     </scenes>
     <resources>
